@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/Lib.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>ColorPicker</title>
+</head>
+  <div class="picker" id="primary_block" >
+    <div id="line">
+      <div id="arrows">
+        <div class="left_arrow"></div>
+        <div class="right_arrow"></div>
+      </div>
+      </div>
+    <div id="block_picker">
+        <img src="https://lh3.googleusercontent.com/-8Dm4nhAOssQ/T_IqwyIFXmI/AAAAAAAAACA/4QKmS7s_otE/s256/bgGradient.png" class="bk_img">
+          <div class="circle" id="circle"></div>
+    </div>
+      <div id="out_color" class="out_color">
+      <div class ="Hex_conteiner">
+        <p>HEX</p>
+        <input class="hex" id="hex" type="text">
+      </div>
+      </div>
+      
+  </div>
+    <div class="modal">
+      <table class="modal1">
+            <tr>
+              <td class="tablMod"><p>RGB</p><div class="inMod" ><input id="RGB_R" value="255" type="text"><input  id="RGB_G" value="255" type="text" ><input id="RGB_B" value="255" type="text" ></div></td>
+              <td class="tablMod"><p>HSL</p><div class="inMod"><input id="HSL_H" value="0" type="text" ><input id="HSL_L" value="0" type="text"><input id="HSL_S" value="100" type="text"></div></td>
+              <td class="tablMod"><p>HSV</p><div class="inMod"><input id="HSV_H" value="100" type="text"><input id="HSV_S" value="100" type="text"><input id="HSV_V" value="100" type="text"></div></td>
+            </tr>
+            <tr>
+              <td class="tablMod"><p>XYZ</p><div class="inMod"><input id="XYZ_X" value ="96" type="text"><input id="XYZ_Y" value ="100"type="text"><input id="XYZ_Z" value ="109" type="text"></div></td>
+              <td class="tablMod"><p>LAB</p><div class="inMod"><input id="LAB_L" value ="100" type="text"><input id="LAB_A" value ="1" type="text"><input id="LAB_B" value ="0" type="text"></div></td>
+              <td class="tablMod"><p>CMYK</p><div class="inMod"><input id="CMYK_C" value="0" type="text"><input id="CMYK_M" value="0" type="text"><input id="CMYK_Y" value="0" type="text"><input id="CMYK_K" value="0" type="text"></div></td>
+            </tr> 
+      </table>     
+    </div>
+
+<script type="text/javascript" src="js\Modal.js"></script>
+<script type="text/javascript" src="js/picker.js"></script>
+<script type="text/javascript">
+picker.init();
+</script>
+</body>
+</html>
